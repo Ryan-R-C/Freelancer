@@ -6,7 +6,8 @@
 .header-fixed__menu__list__item__link */
 
 .header-fixed__navbar-brand, .header-fixed__menu__list__item__link{
-font-size: var(--extra-large-font-size)
+    font-size: var(--extra-large-font-size);
+    font-family: 'Orbitron', sans-serif;
 }
 
 .header-fixed{
@@ -24,21 +25,20 @@ font-size: var(--extra-large-font-size)
     background-color: var(--main-color-transparent);
     display: flex;
     flex-direction: column;
-    height: calc(92vh + 2rem); 
+    height: calc(92vh + 1rem); 
     justify-content: space-around;
     position: absolute;
     right: 0;
-    top: calc(8vh + 2rem );
-    transform: translateX(-200%);
+    top: calc(8vh - .5rem);
+    transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
     width: 50%;
-    align-items: baseline;
+    align-items: center;
 }
 
 .burger{
     cursor: pointer;
-    display: none;
-    transition: ease-in-out;
+
 }
 .burger .burger__line1,
 .burger .burger__line2,
@@ -50,14 +50,13 @@ font-size: var(--extra-large-font-size)
 }
 .burger .burger__line3{
     width: .75rem;
+    transition: 0.2s ease-in-out;
 }
 .burger:hover .burger__line3{
     width: 1.5rem;
 }
-.burger{
-    display: block;
-}
+
 .menu--active{
-    transform: translateX(-100%);
+    transform: translateX(0);
 }
 
