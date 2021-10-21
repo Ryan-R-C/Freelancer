@@ -2,3 +2,13 @@ body{
     width: 100vw;
     background-color: var(--default-black);
 }
+.header-section{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, var(--main-color-deep), var(--default-black) 80%);
+}
+.header-section__title-holder__title,
+.header-section__title-holder__subtitle{
+    color: var(--deafult-white)
+}
