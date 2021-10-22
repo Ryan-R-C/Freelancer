@@ -6,10 +6,17 @@
     height: 100vh;
     background-image: radial-gradient(circle at center, var(--main-color-deep), var(--default-black) 80%);
 }
-.header-section__title-holder__title
-{
-    color: var(--deafault-white)
+.header-section__title-holder__title,
+.header-section__about{
+    color: var(--deafault-white);
 }
+
+.title-holder{
+    border-bottom: 2px solid var(--deafult-transparent-white);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
 
 .header-section__title-holder__subtitle{
     color: var(--custom-grey)
@@ -17,5 +24,4 @@
 
 .header-section__about{
     justify-content: space-evenly;
-    color: var(--deafault-white);
 }
