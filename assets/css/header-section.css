@@ -1,5 +1,8 @@
 .header-section{
+    display: flex;
+    flex-direction: column;
 
+    justify-content: center;
     height: 100vh;
     background-image: radial-gradient(circle at center, var(--main-color-deep), var(--default-black) 80%);
 }
@@ -12,4 +15,7 @@
     color: var(--custom-grey)
 }
 
- 
+.header-section__about{
+    justify-content: space-evenly;
+    color: var(--deafault-white);
+}
