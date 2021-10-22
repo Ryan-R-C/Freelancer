@@ -6,3 +6,6 @@ body{
     display: flex;
     flex-direction: row;
 }
+main{
+    background-color: var(--deafault-white);
+}
