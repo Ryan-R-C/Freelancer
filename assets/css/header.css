@@ -9,7 +9,7 @@
 .header-fixed__navbar-brand__link, .header-fixed__menu__list__item__link{
     font-size: var(--extra-large-font-size);
     font-family: 'Orbitron', sans-serif;
-    color: var(--deafult-white);
+    color: var(--deafault-white);
 }
 
 .header-fixed{
@@ -45,7 +45,7 @@
 .burger .burger__line1,
 .burger .burger__line2,
 .burger .burger__line3{
-    background-color: var(--deafult-white);
+    background-color: var(--deafault-white);
     height: .25rem;
     margin: .25rem;
     width: 1.5rem;

@@ -1,6 +1,7 @@
 /*Import Roboto*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
     --main-color: #1DB9C3;
@@ -9,7 +10,9 @@
     --second-color: #7027A0;
     --third-color: #C32BAD;
     --fourh-color: #F56FAD;
-    --deafult-white: #fbfdfa;
+    --deafault-white: #fbfdfa;
+    --custom-grey: #8193b2;
+    --deafult-transparent-white: #fbfdfa8b;
     --default-black: #050B24;
     --small-font-size: 1.1rem;   
     --medium-font-size: 1.5rem;
@@ -50,5 +53,5 @@ a{
 }
 
 .anchor-tag-white{
-    color: var(--deafult-white);
+    color: var(--deafault-white);
 }
