@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(28, 28, 28, 0.5)), url("https://images.pexels.com/photos/3180831/pexels-photo-3180831.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(28, 28, 28, 0.7)), url("https://images.pexels.com/photos/3180831/pexels-photo-3180831.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") no-repeat;
     background-attachment: fixed;
     background-size: cover;    -o-background-size: cover;
     -moz-background-size: cover;
