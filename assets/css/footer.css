@@ -1,0 +1,23 @@
+.footer-section{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-section *{
+    color: var(--deafault-white);
+}
+.footer-section__section{
+    width: 25%;
+} 
+
+.footer-section__section--1{
+}
+.footer-section__section--2{
+
+}
+.footer-section__section--3{
+}
+.footer-section__section__image{
+    width: 100%;
+}

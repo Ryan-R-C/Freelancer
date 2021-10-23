@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/body.css">
     <link rel="stylesheet" href="assets/css/header-section.css">
     <link rel="stylesheet" href="assets/css/main-content.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <!--Font Awesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
 
@@ -147,8 +148,9 @@
         </main>
     </main>
     <!--Add footer in flex-->
-    <footer>
-        <section class="footer__section footer__section--1">
+    <footer class="footer-section">
+        <!--Each section will have a gradient color-->
+        <section class="footer-section__section footer-section__section--1">
             <ul>
                 <li>
                     Ryan Rodrigo Costa &copy;
@@ -166,14 +168,21 @@
                 </ul>
             </li>
         </section>
-        <section class="footer__section footer__section--2">
-            <a href="#Who_I_am">Who I am</a>
-            <a href="#My_Skills">My Skills</a>
-            <a href="#Differentials">Differentials</a>
-            <a href="#What_I_do">What I do</a>
+        <section class="footer-section__section footer-section__section--2">
+            <ul>
+                
+                <li><a href="#Who_I_am">Who I am</a></li>
+                
+                <li><a href="#My_Skills">My Skills</a></li>
+                
+                <li><a href="#Differentials">Differentials</a></li>
+                
+                <li><a href="#What_I_do">What I do</a></li>
+
+            </ul>
         </section>
-        <section class="footer__section footer__section--3">
-            <img src="" alt="A logo here">
+        <section class="footer-section__section footer__section--3">
+            <img class="footer-section__section__image" src="https://designshack.net/wp-content/uploads/placeholder-image.png" alt="A logo here">
         </section>
     </footer>
     <script src="JavaScript/nav-responsive.js"></script>
