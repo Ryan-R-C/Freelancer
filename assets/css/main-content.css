@@ -1,6 +1,9 @@
 .main-content{
     background-color: var(--deafault-white);
-    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
 }
 .main-content__title{
     text-align: center;
@@ -8,4 +11,8 @@
 }
 .main-content__title--featured{
     color: var(--second-color)
+}
+.main-content--apresentation{
+    background-color: var(--default-black);
+    height: 80vw;
 }
