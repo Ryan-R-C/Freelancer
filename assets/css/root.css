@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --main-color: #1DB9C3;
-    --main-color-deep: #0c5459;
-    --main-color-transparent: #1db8c397;
-    --second-color: #7027A0;
+    --main-color: #461e52;
+    --main-color-deep: #2b1332;
+    --main-color-transparent: #461e528e;
+    --second-color: #dd517e;
     --third-color: #C32BAD;
-    --fourh-color: #F56FAD;
+    --fourh-color: #e58e35;
     --deafault-white: #fbfdfa;
     --custom-grey: #8193b2;
     --deafult-transparent-white: #fbfdfa8b;
