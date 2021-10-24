@@ -58,3 +58,7 @@ a{
 .anchor-tag-white{
     color: var(--deafault-white);
 }
+
+img{
+    width: 100%;
+}
