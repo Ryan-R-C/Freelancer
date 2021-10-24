@@ -21,11 +21,23 @@
 }
 .footer-section__section__image{
     width: 100%;
+    
 }
 .footer-section__section__article{
     width: 90%;
     margin: 0 auto;
+    padding: 1rem;
 }
 .footer-section__section__article__li{
-    margin: .5rem 0;
+    margin: 1rem 0;
+    display: block;
+}
+.footer-section__section__article__header{
+    margin-bottom: 1rem;
+}
+.footer-section__section__article__ul--flex{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0;
 }
