@@ -1,0 +1,24 @@
+.portfolio{
+    padding: 2rem 0;
+    background-color: var(--default-black);    
+}
+.portfolio__article{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem auto;
+    border: 1px solid var(--default-black);
+}
+.portfolio__article__img{
+    box-sizing: border-box;
+}
+.content-holder{
+    padding: 1rem;
+    background-color: var(--deafault-white);
+}
+.portfolio__article__paragraph{
+    text-align: justify;
+}
+.portfolio__article__h3{
+    padding: 1rem;
+}
