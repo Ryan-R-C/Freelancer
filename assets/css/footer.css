@@ -8,16 +8,21 @@
     color: var(--deafault-white);
 }
 .footer-section__section{
-    width: 25%;
+    width: 33.33%;
 } 
-
 .footer-section__section--1{
+    background-color: var(--default-dark-grey);
 }
 .footer-section__section--2{
-
+    background-color: var(--default-light-grey);
 }
 .footer-section__section--3{
+    background-color: var(--main-color);
 }
 .footer-section__section__image{
     width: 100%;
+}
+.footer-section__section__article{
+    width: 90%;
+    margin: 0 auto;
 }
