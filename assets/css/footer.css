@@ -26,3 +26,6 @@
     width: 90%;
     margin: 0 auto;
 }
+.footer-section__section__article__li{
+    margin: .5rem 0;
+}
