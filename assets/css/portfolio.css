@@ -23,3 +23,21 @@
 .portfolio__article__h3{
     padding: 1rem;
 }
+
+
+@media screen and (min-width:425px){
+    .portfolio__article--main{
+        margin: 0 auto;
+        width: 95%;
+    }
+    .portfolio__article--aside{
+        width: 45%;
+
+    }
+}
+@media screen and (min-width:768px){
+           
+}
+@media screen and (min-width:1024px){
+    
+}
