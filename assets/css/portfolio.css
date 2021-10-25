@@ -10,9 +10,14 @@
 }
 .portfolio__article__img{
     object-fit: cover;
+    transition: .5s ;
+    z-index: 1;
 }
 .portfolio__article__img--aside{
     height: 8em;
+}
+.portfolio__article__img:hover {
+    box-shadow: 1em 1em 0rem var(--second-color);
 }
 .content-holder{
     padding: 2rem;
@@ -51,6 +56,7 @@
     }
     .portfolio__flex-container__main{
         width: 50%;
+        background-color: none;
     }
     .portfolio__aside
     {
