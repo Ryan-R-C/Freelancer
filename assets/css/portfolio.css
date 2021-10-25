@@ -1,6 +1,6 @@
 .portfolio{
     padding: 2rem 0;
-    background-color: var(--default-black);    
+    background-color: var(--deafault-white );    
 }
 .portfolio__article{
     display: flex;
@@ -8,6 +8,7 @@
     width: 80%;
     margin: 2rem auto;
     border: 1px solid var(--default-black);
+    box-shadow: 0 0 1rem var(--main-color);
 }
 .portfolio__article__img{
     box-sizing: border-box;
