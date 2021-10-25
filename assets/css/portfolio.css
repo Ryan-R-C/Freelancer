@@ -23,6 +23,10 @@
 .portfolio__article__h3{
     padding: 1rem;
 }
+.portfolio__aside{
+    flex-direction: column;
+    width: 100%;
+}
 
 
 @media screen and (min-width:425px){
@@ -32,11 +36,38 @@
     }
     .portfolio__article--aside{
         width: 45%;
-
+        
+    }
+    .portfolio__aside{
+        flex-direction: row;
     }
 }
 @media screen and (min-width:768px){
-           
+    .portfolio__flex-container{
+        justify-content: center;
+    }
+    .portfolio__flex-container__main{
+        width: 60%;
+    }
+    .portfolio__aside
+    {
+        width: 30%;
+    }
+    .portfolio__article--main,
+    .portfolio__article--aside{
+        margin: 0;
+        margin-bottom: 2rem;
+        
+    }
+    .portfolio__article--aside{
+        width: 100%;
+    }
+    .portfolio__aside{
+        flex-direction: column;
+    }
+    .portfolio{
+        flex-direction: row;
+    }
 }
 @media screen and (min-width:1024px){
     
