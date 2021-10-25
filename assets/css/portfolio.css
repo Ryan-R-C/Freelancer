@@ -11,7 +11,11 @@
     box-shadow: 0 0 1rem var(--main-color);
 }
 .portfolio__article__img{
-    box-sizing: border-box;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio__article__img--aside{
+    height: 8em;
 }
 .content-holder{
     padding: 1rem;
@@ -56,8 +60,10 @@
     .portfolio__article--main,
     .portfolio__article--aside{
         margin: 0;
-        margin-bottom: 2rem;
-        
+        margin-bottom: 2rem;       
+    }
+    .portfolio__article__img--aside{
+        height: 10em;
     }
     .portfolio__article--aside{
         width: 100%;
