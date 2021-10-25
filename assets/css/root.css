@@ -36,7 +36,7 @@ span{
 
 h1,h2,h3, .title{
     font-family: 'Orbitron', sans-serif;
-    text-align: center;
+    color: var(--main-color);
 }
 
 h1{font-size: var(--large-font-size )}
@@ -65,4 +65,7 @@ img{
 }
 *{
     box-sizing: border-box;
+}
+.center{
+    text-align: center;
 }

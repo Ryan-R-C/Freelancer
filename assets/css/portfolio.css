@@ -7,8 +7,6 @@
     flex-direction: column;
     width: 80%;
     margin: 2rem auto;
-    border: 1px solid var(--default-black);
-    box-shadow: 0 0 1rem var(--main-color);
 }
 .portfolio__article__img{
     object-fit: cover;
@@ -17,14 +15,16 @@
     height: 8em;
 }
 .content-holder{
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--deafault-white);
 }
 .portfolio__article__paragraph{
     text-align: justify;
+    vertical-align: middle;
 }
 .portfolio__article__h3{
-    padding: 1rem;
+    border-bottom: 1px solid var(--custom-grey);
+    margin-bottom: 2rem;
 }
 .portfolio__aside{
     flex-direction: column;
@@ -50,11 +50,11 @@
         justify-content: center;
     }
     .portfolio__flex-container__main{
-        width: 40%;
+        width: 50%;
     }
     .portfolio__aside
     {
-        width: 35%;
+        width: 40%;
     }
     .portfolio__article__img--aside{
         width: 50%;
