@@ -24,6 +24,15 @@
     width:100%; 
     z-index: 99;
 }
+.responsive-navbar__nav-list__list-el--social-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.white-icon{
+    color: var(--deafault-white);
+    font-size: 2rem;
+}
 .header-fixed__menu__list{
     align-items: center;
     background-color: var(--default-black-shadow);
