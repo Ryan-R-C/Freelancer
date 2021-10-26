@@ -1,0 +1,14 @@
+.my-skills{
+    background-color: var(--default-dark-grey);
+}
+.my-skills__list{
+    padding: 0 !important;
+    height: auto;
+}
+.my-skills__title{
+    color: var(--deafault-white);
+}
+.my-skills__list__list-element{
+    margin: 1rem !important;
+    width: calc(30% - 1rem) !important;
+}
