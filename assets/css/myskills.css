@@ -1,5 +1,6 @@
 .my-skills{
     background-color: var(--default-dark-grey);
+    padding-bottom: 3rem;
 }
 .my-skills__list{
     padding: 0 !important;
@@ -7,6 +8,7 @@
 }
 .my-skills__title{
     color: var(--deafault-white);
+    height: 2rem;
 }
 .my-skills__list__list-element{
     margin: 1rem !important;
