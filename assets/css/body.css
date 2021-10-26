@@ -2,18 +2,7 @@ body{
     width: 100%;
     background-color: var(--default-black);
 }
-.flex-container{ 
-    display: flex;
-    flex-direction: row;
-}
-.flex-container--featured{ 
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.flex-container--column{
-    display: flex;
-    flex-direction: column;
-}
+
 main{
     background-color: var(--deafault-white);
 }
