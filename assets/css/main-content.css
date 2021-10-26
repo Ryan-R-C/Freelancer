@@ -11,5 +11,6 @@
 }
 .main-content--apresentation{
     background-color: var(--default-black);
-    height: 80vw;
+    min-height: 80vw;
+    padding: 2rem 0;
 }
