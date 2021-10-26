@@ -12,7 +12,7 @@
 }
 .my-skills__list__list-element{
     margin: 1rem !important;
-    width: calc(30% - 1rem) !important;
+    width: calc(100% - 2rem) !important;
     text-align: center;
 }
 .my-skills__list__list-element__title{
@@ -22,4 +22,20 @@
 .my-skills__list__list-element__icon{
     margin-top: 1rem;
     font-size: 5rem;
+}
+
+@media screen and (min-width:425px){
+    .my-skills__list__list-element{
+        width: calc(50% - 2rem) !important;
+    }    
+}
+@media screen and (min-width:768px){
+    .my-skills__list__list-element{
+        width: calc(30% - 2rem) !important;
+    }
+}
+@media screen and (min-width:1024px){
+    .my-skills__list__list-element{
+        width: calc(30% - 2rem) !important;
+    }
 }
