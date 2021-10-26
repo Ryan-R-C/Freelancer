@@ -4,19 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --main-color: #461e52;
-    --main-color-deep: #2b1332;
-    --main-color-transparent: #461e528e;
-    --second-color: #dd517e;
-    --third-color: #C32BAD;
-    --fourh-color: #e58e35;
+    --main-color: #650D89;
+    --main-color-deep: #460a5e;
+    --main-color-transparent: #660d89a5;
+    --second-color: #D40078;
+    --second-color-heavy: #920075;
+    --second-color-light: #F6019D;
     --deafault-white: #fbfdfa;
-    --custom-grey: #8193b2;
+    --custom-grey: #452484;
     --deafult-transparent-white: #fbfdfa8b;
-    --default-black: #050B24;
-    --default-dark-grey: #242427;
+    --default-black: #0d0221;
+    --default-dark-grey: #261447;
     --default-light-grey: #150f2e;
-    --default-black-shadow: #050b2487;
+    --default-black-shadow: #26144795;
     --small-font-size: 1.1rem;   
     --medium-font-size: 1.5rem;
     --large-font-size: 2rem;
