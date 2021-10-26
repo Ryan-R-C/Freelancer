@@ -1,8 +1,5 @@
 .main-content{
     background-color: var(--deafault-white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 2rem 0;
 }
 .main-content__title{
