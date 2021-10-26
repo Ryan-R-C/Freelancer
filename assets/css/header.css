@@ -14,6 +14,7 @@
 
 .header-fixed{
     align-items: center;
+    height: 10vh;
     background-color: var(--default-black-shadow);
     display: flex;
     margin: 0 auto;
@@ -25,14 +26,14 @@
 }
 .header-fixed__menu__list{
     align-items: center;
-    background-color: var(--main-color-transparent);
+    background-color: var(--default-black-shadow);
     display: flex;
     flex-direction: column;
     height: calc(92vh + 1rem); 
     justify-content: space-around;
     position: absolute;
     right: 0;
-    top: calc(8vh - .5rem);
+    top: 10vh;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
     width: 50%;
