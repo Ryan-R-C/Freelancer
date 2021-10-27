@@ -23,13 +23,14 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
-    top: 50%;
+    top: 35%;
     left: 50%;
-    font-size: 5em;
-    transform: translate(-50%, -150%);
+    font-size: 3.5em;
+    transform: translate(-50%, -50%);
     transition: font-size 1s;
     position: absolute;
     text-transform: uppercase;
+    white-space: nowrap;
     z-index: 2;
     
 }
