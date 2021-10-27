@@ -22,10 +22,15 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    font-size: 5em;
+    transform: translate(-50%, -150%);
     transition: font-size 1s;
     position: absolute;
     text-transform: uppercase;
+    z-index: 2;
     
 }
 ::after {
@@ -50,7 +55,7 @@
     height: 418px;
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
     width: 475px;
-    z-index: 5;
+    z-index: 1;
 }
 
 .title-holder{
