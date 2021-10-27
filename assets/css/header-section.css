@@ -58,10 +58,11 @@
     text-align: center;
 }
 .header-section__about__content{
-    width: 33.33%;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 .header-section__about{
-    flex-direction: row;
+    flex-direction: column; 
     justify-content: space-evenly;
     bottom: 5%;
     font-size: 2.5em;
@@ -69,4 +70,13 @@
     position: absolute;
     width: 90%;
     z-index: 2;
+}
+@media screen and (min-width:470px){
+
+    .header-section__about__content{
+        width: 33.33%;
+    }
+    .header-section__about{
+        flex-direction: row;
+    }
 }
