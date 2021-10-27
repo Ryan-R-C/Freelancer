@@ -54,13 +54,18 @@
     z-index: 2;
 }
 
+.header-section__about__content__subtitle3{
+    color: var(--deafault-white);
+    text-align: center;
+}
+.header-section__about__content{
+    width: 33.33%;
+}
 .header-section__about{
     flex-direction: row;
     justify-content: space-evenly;
     bottom: 5%;
     font-size: 2.5em;
-    left: 6.3%;
-
     transform-origin: left;
     position: absolute;
     width: 90%;
