@@ -18,35 +18,25 @@
     color: var(--deafault-white);
 }
 .header-section__title-holder__title{
-    background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#859ee2 51%,#d5ebfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom,  #4C789D 0%, #FCFDFC 51%, var(--main-color) 65%, var(--main-color-light) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    top: 35%;
-    left: 50%;
+    color: transparent;
     font-size: 3.5em;
+    font-weight: bolder;
+    margin: 0;
+    left: 50%;
     transform: translate(-50%, -50%);
     transition: font-size 1s;
     position: absolute;
     text-transform: uppercase;
     white-space: nowrap;
+    top: 35%;
     z-index: 2;
+
     
 }
-::after {
-    background: none;
-    content: attr(data-text);
-    left: 0;
-    position: absolute;
-    text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
-    3px 1px 3px rgba(255,0,255,0.85), 
-    -3px -2px 3px rgba(0,0,255,0.85),
-    1px -2px 0 rgba(255,255,255,0.8);
-    z-index: -3;
-}
-
-.triangle-left {
+.triangle {
     transform: translate(-50%, -50%);
     content: ' ';
     position: absolute;
@@ -65,10 +55,6 @@
     padding-bottom: 2rem;
 }
 
-
-.header-section__title-holder__subtitle{
-    color: var(--custom-grey)
-}
 
 .header-section__about{
     flex-direction: column;
