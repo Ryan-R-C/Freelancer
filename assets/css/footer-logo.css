@@ -38,22 +38,26 @@
 
 
 .footer--subtitle{
-    top: 50%;
-    left: 50%;
-    font-size: 1.6em;
-
-    transform-origin: left;
-    transform: translate(-25%, 0) rotate(-15deg);
-    position: absolute;
-    transition: font-size 1s;
-    z-index: 2;
-
     color: var(--second-color-light);
     font-family: 'Courgette', cursive !important;
+    font-size: 1.6em;
+    
+    left: 50%;
+    position: absolute;
+    
     text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
     2px 1px 2px rgba(255,0,255,0.85), 
     -3px -2px 3px rgba(0,0,255,0.85),
+    
     1px -2px 0 rgba(255,255,255,0.8) !important;
+    top: 50%;
+
+
+    transform-origin: left;
+    transform: translate(-25%, 0) rotate(-15deg);
+    transition: font-size 1s;
+    z-index: 2;
+
     
 }
 @media screen and (min-width:700px){

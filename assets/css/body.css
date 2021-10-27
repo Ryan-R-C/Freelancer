@@ -1,6 +1,6 @@
 body{
-    width: 100%;
     background-color: var(--default-black);
+    width: 100%;
 }
 
 main{

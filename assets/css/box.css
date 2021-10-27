@@ -1,9 +1,9 @@
 
 .box{
-    width:85%;
     margin: auto;
     background-color: var(--deafault-white);
-    padding: 1rem
+    padding: 1rem;
+    width:85%;
 }
 
 @media screen and (min-width:425px){

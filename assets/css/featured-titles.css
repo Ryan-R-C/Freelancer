@@ -1,11 +1,11 @@
 .featured-title{
     background: linear-gradient(to bottom,  #4C789D 0%, #FCFDFC 51%, var(--main-color) 65%, var(--main-color-light) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: bolder;
     text-transform: uppercase;
     white-space: nowrap;
-    font-weight: bolder;
+    -webkit-background-clip: text;
 }
 .featured-subtitle{
     color: var(--second-color-light);

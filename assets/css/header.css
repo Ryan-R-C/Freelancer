@@ -1,26 +1,19 @@
-/* .header-fixed
-.header-fixed__navbar-brand
-.header-fixed__menu
-.header-fixed__menu__list
-.header-fixed__menu__list__item
-.header-fixed__menu__list__item__link */
-
 .header-fixed__navbar-brand,
 .header-fixed__navbar-brand__link, .header-fixed__menu__list__item__link{
     font-size: var(--extra-large-font-size);
-    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
- 
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .header-fixed__menu__list__item__link{
-color: var(--deafault-white);
+    color: var(--deafault-white);
 }
 .header-fixed{
     align-items: center;
-    height: 10vh;
     background-color: var(--default-black-shadow);
     display: flex;
-    margin: 0 auto;
+    height: 10vh;
     justify-content: space-between;
+    margin: 0 auto;
     position: fixed;
     top: 0;
     width:100%; 
@@ -48,7 +41,6 @@ color: var(--deafault-white);
     transform: translateY(calc(-100% - 10vh));
     transition: transform 0.5s ease-in-out;
     width: 100%;
-    align-items: center;
 }
 
 .burger{
@@ -64,8 +56,8 @@ color: var(--deafault-white);
     width: 1.5rem;
 }
 .burger .burger__line3{
-    width: .75rem;
     transition: 0.2s ease-in-out;
+    width: .75rem;
 }
 .burger:hover .burger__line3{
     width: 1.5rem;

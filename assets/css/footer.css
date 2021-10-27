@@ -1,9 +1,9 @@
 .footer-section{
     display: flex;
     flex-direction: column;
+    font-size: 0.8em;
     justify-content: space-evenly;
     width: 100%;
-    font-size: 0.8em;
 }
 
 .footer-section *{
@@ -23,13 +23,13 @@
     
 }
 .footer-section__section__article{
-    width: 90%;
-    margin: 0 auto;
     padding: 1rem;
+    margin: 0 auto;
+    width: 90%;
 }
 .footer-section__section__article__li{
-    margin: 1rem 0;
     display: block;
+    margin: 1rem 0;
     text-align: center;
 }
 .footer-section__section__article__header{
@@ -38,8 +38,8 @@
 .footer-section__section__article__ul--flex{
     display: flex;
     justify-content: space-between;
-    width: 50%;
     margin: 0 auto;
+    width: 50%;
 }
 .footer-section__section__article__header2{
     font-size: var(--small-font-size);

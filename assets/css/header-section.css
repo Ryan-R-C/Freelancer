@@ -1,17 +1,16 @@
 .header-section{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(28, 28, 28, 0.7)), url("https://cdn.dribbble.com/users/1590294/screenshots/5272939/ezgif-4-5f602abb23.gif") no-repeat;
     background-attachment: fixed;
-    background-size: cover;
     background-position: center;    
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size:cover;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size:cover;
     overflow-x: hidden;
     position:relative;
 }
@@ -20,37 +19,35 @@
 }
 .header-section__title-holder__title{
     font-size: 2.5em;
-    margin: 0;
     left: 50%;
+    margin: 0;
     position: absolute;
+    top: 35%;
     transform: translate(-50%, -50%);
     transition: font-size 1s;
-    top: 35%;
     z-index: 1;
 }
 .triangle {
-    content: ' ';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 3em;
-    min-height: 23em;
-    transform-origin: left;
-    transform: translate(-50%, -50%);    
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
     background-position: center;
+    left: 50%;
+    min-height: 23em;
+    position: absolute;
+    top: 50%;
+    transform-origin: left;
+    transform: translate(-50%, -50%);    
     width: 26em;
     z-index: 0;
 }
 
 
 .header-section__title-holder__subtitle{
-    top: 55%;
-    left: 50%;
     font-size: 2.6em;
+    left: 50%;
+    position: absolute;
+    top: 55%;
     transform-origin: left;
     transform: translate(-45%, 0) rotate(-15deg);
-    position: absolute;
     transition: font-size 1s;
     z-index: 2;
 }
@@ -60,16 +57,16 @@
     text-align: center;
 }
 .header-section__about__content{
-    width: 100%;
     margin-bottom: 1rem;
+    width: 100%;
 }
 .header-section__about{
-    flex-direction: column; 
-    justify-content: space-evenly;
     bottom: 5%;
     font-size: 2.5em;
-    transform-origin: left;
+    flex-direction: column; 
+    justify-content: space-evenly;
     position: absolute;
+    transform-origin: left;
     width: 90%;
     z-index: 2;
 }

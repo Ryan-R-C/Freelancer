@@ -11,17 +11,21 @@
     height: 2rem;
 }
 .my-skills__list__list-element{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 1rem !important;
-    width: calc(100% - 2rem) !important;
     text-align: center;
+    width: calc(100% - 2rem) !important;
 }
 .my-skills__list__list-element__title{
     color: var(--second-color);
     font-weight: bold;
 }
 .my-skills__list__list-element__icon{
-    margin-top: 1rem;
     font-size: 5rem;
+    margin-top: 1rem;
 }
 
 @media screen and (min-width:425px){

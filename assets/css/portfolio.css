@@ -1,12 +1,12 @@
 .portfolio{
-    padding: 2rem 0;
     background-color: var(--deafault-white );    
+    padding: 2rem 0;
 }
 .portfolio__article{
     display: flex;
     flex-direction: column;
-    width: 80%;
     margin: 2rem auto;
+    width: 80%;
 }
 .portfolio__article__img{
     object-fit: cover;
@@ -20,8 +20,8 @@
     box-shadow: 1em 1em 0rem var(--second-color);
 }
 .content-holder{
-    padding: 2rem;
     background-color: var(--deafault-white);
+    padding: 2rem;
 }
 .portfolio__article__paragraph{
     text-align: justify;
