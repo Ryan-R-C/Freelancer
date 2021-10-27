@@ -12,21 +12,47 @@
     -moz-background-size: cover;
     -webkit-background-size:cover;
     background-size: cover;
+    position:relative;
 }
 .header-section__about{
     color: var(--deafault-white);
 }
 .header-section__title-holder__title{
     background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#859ee2 51%,#d5ebfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2em;
     transition: font-size 1s;
     position: absolute;
-    text-transform: uppercase
+    text-transform: uppercase;
+    
 }
+::after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
+    3px 1px 3px rgba(255,0,255,0.85), 
+    -3px -2px 3px rgba(0,0,255,0.85),
+    1px -2px 0 rgba(255,255,255,0.8);
+    z-index: -3;
+}
+
+.triangle-left {
+    transform: translate(-50%, -50%);
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 418px;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
+    width: 475px;
+    z-index: 5;
+}
+
 .title-holder{
     border-bottom: 2px solid var(--deafult-transparent-white);
     margin-bottom: 2rem;
