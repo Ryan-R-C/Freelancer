@@ -1,0 +1,17 @@
+.featured-title{
+    background: linear-gradient(to bottom,  #4C789D 0%, #FCFDFC 51%, var(--main-color) 65%, var(--main-color-light) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.featured-subtitle{
+    color: var(--second-color-light);
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
+    2px 1px 2px rgba(255,0,255,0.85), 
+    -3px -2px 3px rgba(0,0,255,0.85),
+    1px -2px 0 rgba(255,255,255,0.8);
+}
