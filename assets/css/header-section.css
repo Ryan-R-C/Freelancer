@@ -34,11 +34,12 @@
     top: 50%;
     left: 50%;
     width: 3em;
-    height: 418px;
+    min-height: 23em;
     transform-origin: left;
     transform: translate(-50%, -50%);    
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
-    width: 475px;
+    background-position: center;
+    width: 26em;
     z-index: 0;
 }
 
@@ -46,7 +47,7 @@
 .header-section__title-holder__subtitle{
     top: 55%;
     left: 50%;
-    font-size: 2.5em;
+    font-size: 2.6em;
     transform-origin: left;
     transform: translate(-45%, 0) rotate(-15deg);
     position: absolute;
