@@ -32,7 +32,7 @@
     text-transform: uppercase;
     white-space: nowrap;
     top: 35%;
-    z-index: 2;
+    z-index: 1;
 
     
 }
@@ -46,7 +46,7 @@
     height: 418px;
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
     width: 475px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .title-holder{
