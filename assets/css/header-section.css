@@ -13,11 +13,20 @@
     -webkit-background-size:cover;
     background-size: cover;
 }
-.header-section__title-holder__title,
 .header-section__about{
     color: var(--deafault-white);
 }
-
+.header-section__title-holder__title{
+    background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#859ee2 51%,#d5ebfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    transition: font-size 1s;
+    position: absolute;
+    text-transform: uppercase
+}
 .title-holder{
     border-bottom: 2px solid var(--deafult-transparent-white);
     margin-bottom: 2rem;
