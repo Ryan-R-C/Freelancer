@@ -56,3 +56,13 @@
     1px -2px 0 rgba(255,255,255,0.8) !important;
     
 }
+@media screen and (min-width:700px){
+    .footer--subtitle{
+        top: 60%;
+
+        transform: translate(-45%, 0) rotate(-15deg);
+    }    
+    .footer--title{
+        font-size: 2em;
+    }
+}
