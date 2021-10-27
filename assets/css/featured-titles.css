@@ -5,6 +5,7 @@
     color: transparent;
     text-transform: uppercase;
     white-space: nowrap;
+    font-weight: bolder;
 }
 .featured-subtitle{
     color: var(--second-color-light);
