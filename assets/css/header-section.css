@@ -56,6 +56,17 @@
 }
 
 
+.header-section__title-holder__subtitle{
+    text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
+    2px 1px 2px rgba(255,0,255,0.85), 
+    -3px -2px 3px rgba(0,0,255,0.85),
+    1px -2px 0 rgba(255,255,255,0.8);
+    color: rgb(255, 0, 234);
+    font-size: 2.5em;
+    position: absolute;
+    font-family: 'Courgette', cursive;
+    transition: font-size 1s;
+}
 
 .header-section__about{
     flex-direction: column;
