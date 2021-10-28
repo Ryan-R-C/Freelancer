@@ -9,19 +9,27 @@ const nextBtn = document.querySelector('#nextBtn')
 counter = 1
 let size = carouselImages[0].clientWidth;
 
-carouselSlide.style.transform = `translateX(${-size * counter}px)`
-//btn listeners
-prevBtn.addEventListener('click', () =>{
+function prevButtonAction(){
     if(counter <= 0 ) return
     carouselSlide.style.transition = "transform 0.5s ease-in-out"
     counter --
     carouselSlide.style.transform = `translateX(${-size * counter}px`
-})
-nextBtn.addEventListener('click', () =>{
+
+}
+
+function nextButtonAction(){
     if(counter >= carouselImages.length -1) return
     carouselSlide.style.transition = 'transform 0.5s ease-in-out'
     counter ++
     carouselSlide.style.transform = `translateX(${-size * counter}px`
+}
+
+carouselSlide.style.transform = `translateX(${-size * counter}px)`
+//btn listeners
+prevBtn.addEventListener('click', () =>{
+    prevButtonAction()})
+nextBtn.addEventListener('click', () =>{
+    nextButtonAction()
 })
 
 carouselSlide.addEventListener('transitionend', ()=> {
