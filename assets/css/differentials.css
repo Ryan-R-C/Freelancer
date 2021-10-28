@@ -1,0 +1,35 @@
+.differentials{
+    background-color: var(--default-dark-grey);
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    padding: 5rem;
+    width: 100%;
+}
+.differentials__list{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.differentials__title{
+    color: var(--deafault-white);
+    height: 2rem;
+}
+.differentials__list__list-element{
+    background-color: var(--deafault-white);
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+    padding: 1rem;
+    max-width: calc(25% - 2rem) !important;
+    text-align: center;
+}
+.differentials__list__list-element__title{
+    color: var(--second-color);
+    font-weight: bold;
+}
+.differentials__list__list-element__icon{
+    margin-top: 1rem;
+    font-size: 8em;
+}

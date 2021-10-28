@@ -1,6 +1,8 @@
 .my-skills{
     background-color: var(--default-dark-grey);
     padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 .my-skills__list{
     padding: 0 !important;
@@ -11,14 +13,15 @@
     height: 2rem;
 }
 .my-skills__list__list-element{
-    align-items: center;
     background-color: var(--deafault-white);
+    margin: 1rem !important;
+    text-align: center;
+}
+.differentials__list__list-element__content-holder{
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1rem !important;
-    text-align: center;
-
 }
 .my-skills__list__list-element__title{
     color: var(--second-color);
