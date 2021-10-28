@@ -27,17 +27,12 @@ nextBtn.addEventListener('click', () =>{
 carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
         carouselSlide.style.transition = "none"
-        counter = Math.floor(carouselImages.length / 2 - 1)
-        console.log("LAST")
-        console.log(counter)        
+        counter = Math.floor(carouselImages.length / 2 - 1)        
         carouselSlide.style.transform = `translateX(${-size * counter}px`
     }
     else if(carouselImages[counter].className.includes('first-clone')){
         carouselSlide.style.transition = "none"
         counter = 1
-        console.log("FIRST")
-        console.log(counter)        
-
         carouselSlide.style.transform = `translateX(${-size * counter}px`
     }
 })
