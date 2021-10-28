@@ -1,7 +1,5 @@
 ( () =>
-    {
-
-const carouselSlide = document.querySelector(".carousel-container__carousel-slide")
+    {const carouselSlide = document.querySelector(".carousel-container__carousel-slide")
 const carouselImages = document.querySelectorAll(".carousel-slide__carousel-items")
 console.log(carouselImages[0])
 //btn
@@ -9,9 +7,7 @@ const prevBtn = document.querySelector('#prevBtn')
 const nextBtn = document.querySelector('#nextBtn')
 
 counter = 1
-let size = carouselImages[0].clientWidth - carouselImages.length;
-
-
+let size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = `translateX(${-size * counter}px)`
 //btn listeners
@@ -29,14 +25,19 @@ nextBtn.addEventListener('click', () =>{
 })
 
 carouselSlide.addEventListener('transitionend', ()=> {
-    if(carouselImages[counter].id === 'last-clone'){
+    if(carouselImages[counter].className.includes('last-clone')){
         carouselSlide.style.transition = "none"
-        counter = carouselImages.length -2
+        counter = Math.floor(carouselImages.length / 2)
+        console.log("LAST")
+        console.log(counter)        
         carouselSlide.style.transform = `translateX(${-size * counter}px`
     }
-    if(carouselImages[counter].id === 'fist-clone'){
+    else if(carouselImages[counter].className.includes('first-clone')){
         carouselSlide.style.transition = "none"
-        counter = carouselImages.length - counter
+        counter = 1
+        console.log("FIRST")
+        console.log(counter)        
+
         carouselSlide.style.transform = `translateX(${-size * counter}px`
     }
 })
@@ -45,5 +46,4 @@ window.addEventListener('resize', () => {
     carouselSlide.style.transition = "none";
     size = carouselImages[0].clientWidth;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-})
-}) ()
+})}) ()

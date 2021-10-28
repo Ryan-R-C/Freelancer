@@ -13,8 +13,7 @@
     position: relative;
 }
 .carousel-slide__carousel-items{
-}
-.carousel-slide__carousel-items{
+    width: 100% !important;
 }
 .carousel-container__carousel-slide{
     display: flex;
