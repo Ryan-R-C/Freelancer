@@ -37,7 +37,7 @@
     transform-origin: left;
     transform: translate(-50%, -50%);    
     width: 26em;
-    z-index: 0;
+    z-index: 1;
 }
 
 
