@@ -22,6 +22,7 @@
     justify-content: space-between;
     margin-bottom: 0 !important;
     padding: 1rem;
+    position: relative;
     max-width: calc(25% - 2rem) !important;
     text-align: center;
 }
@@ -32,4 +33,14 @@
 .differentials__list__list-element__icon{
     margin-top: 1rem;
     font-size: 8em;
+}
+.triangle--card{
+    background-position: center;
+    opacity: .9;
+    min-height: 13em;
+    width: 16em;
+    position: absolute;
+    transform: translate(-50%, -40%);
+    z-index: 999;
+    object-fit: cover !important;
 }
