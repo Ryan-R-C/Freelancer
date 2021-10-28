@@ -27,7 +27,7 @@ nextBtn.addEventListener('click', () =>{
 carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
         carouselSlide.style.transition = "none"
-        counter = Math.floor(carouselImages.length / 2)
+        counter = Math.floor(carouselImages.length / 2 - 1)
         console.log("LAST")
         console.log(counter)        
         carouselSlide.style.transform = `translateX(${-size * counter}px`
