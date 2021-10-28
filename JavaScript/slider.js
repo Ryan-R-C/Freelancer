@@ -18,16 +18,20 @@ function prevButtonAction(){
 }
 
 function nextButtonAction(){
-    if(counter >= carouselImages.length -1) return
+    if(counter <= carouselImages.length /2 -1)
+    {
     carouselSlide.style.transition = 'transform 0.5s ease-in-out'
     counter ++
-    carouselSlide.style.transform = `translateX(${-size * counter}px`
+    carouselSlide.style.transform = `translateX(${-size * counter}px`}
+    else{
+        counter = 1
+    }
 }
 
 carouselSlide.style.transform = `translateX(${-size * counter}px)`
 //btn listeners
 prevBtn.addEventListener('click', () =>{
-    prevButtonAction()})
+prevButtonAction()})
 nextBtn.addEventListener('click', () =>{
     nextButtonAction()
 })
@@ -38,7 +42,7 @@ carouselSlide.addEventListener('transitionend', ()=> {
         counter = Math.floor(carouselImages.length / 2 - 1)        
         carouselSlide.style.transform = `translateX(${-size * counter}px`
     }
-    else if(carouselImages[counter].className.includes('first-clone')){
+    if(carouselImages[counter].className.includes('first-clone')){
         carouselSlide.style.transition = "none"
         counter = 1
         carouselSlide.style.transform = `translateX(${-size * counter}px`
@@ -47,6 +51,6 @@ carouselSlide.addEventListener('transitionend', ()=> {
 
 window.addEventListener('resize', () => {
     carouselSlide.style.transition = "none";
-    size = carouselImages[0].clientWidth;
+    size = carouselImages[1].clientWidth;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 })}) ()
