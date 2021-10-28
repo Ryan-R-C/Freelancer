@@ -1,0 +1,46 @@
+.carousel-container,
+.carousel-container__carousel-slide,
+.carousel-slide__carousel-items{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-container{
+    width: 100%;
+    margin: auto 0;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-slide__carousel-items{
+}
+.carousel-slide__carousel-items{
+}
+.carousel-container__carousel-slide{
+    display: flex;
+}
+
+#carousel-container__carousel-actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#nextBtn, #prevBtn{
+    color: rgba(0, 0, 0, 0.646);
+    background: rgb(0, 0, 0, 0);
+    border: none;
+    cursor: pointer
+}
+#nextBtn:hover, #prevBtn:hover
+#nextBtn:focus, #prevBtn:focus{
+    color: rgb(0, 0, 0);
+}
+.carousel-btn-prev{
+    margin-left: 0.5rem;
+}
+.carousel-btn-next{
+      margin-right: 0.5rem ;
+}
