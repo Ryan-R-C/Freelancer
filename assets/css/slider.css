@@ -14,6 +14,8 @@
 }
 .carousel-slide__carousel-items{
     width: 100% !important;
+    padding: .5rem 1rem;
+    min-width: 230px;
 }
 .carousel-container__carousel-slide{
     display: flex;

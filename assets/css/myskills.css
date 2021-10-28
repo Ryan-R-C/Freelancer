@@ -12,6 +12,7 @@
 }
 .my-skills__list__list-element{
     align-items: center;
+    background-color: var(--deafault-white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
