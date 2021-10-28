@@ -1,7 +1,7 @@
 .differentials{
     background-color: var(--default-dark-grey);
     padding-bottom: 3rem;
-    min-height: 100vh;
+    min-height: calc(100vh - 10rem);
     padding: 5rem;
     width: 100%;
 }
@@ -9,6 +9,7 @@
     height: auto;
     display: flex;
     justify-content: space-evenly;
+    padding: 5rem;
     width: 100%;
 }
 .differentials__title{
@@ -21,7 +22,6 @@
     margin: 1rem;
     justify-content: space-between;
     margin-bottom: 0 !important;
-    padding: 1rem;
     position: relative;
     max-width: calc(25% - 2rem) !important;
     text-align: center;
