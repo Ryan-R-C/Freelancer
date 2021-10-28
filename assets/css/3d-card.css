@@ -1,0 +1,22 @@
+
+.card__element{
+    perspective: 1000px;
+}
+.card{
+    box-shadow: 0 20px 20px var(--default-black-shadow), 0 0 50px var(--default-black-shadow);
+    height: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+}
+.card__element__icon{
+    transform: translate(0%);
+}
+.triangle--card,
+.card__element__icon,
+.card__element__title{
+    transition: all 0.75s ease-out;
+}

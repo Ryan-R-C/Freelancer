@@ -17,14 +17,20 @@
     height: 2rem;
 }
 .differentials__list__list-element{
-    background-color: var(--deafault-white);
+    background-color: var(--deafault-white) !important;
     display: flex;
-    margin: 1rem;
     justify-content: space-between;
-    margin-bottom: 0 !important;
+    flex-wrap: wrap;
     position: relative;
-    max-width: calc(25% - 2rem) !important;
+    margin-bottom: 0 !important;
+    margin: 1rem;
+    height: 100% !important;
+    width: calc(23% - 2rem);
     text-align: center;
+}
+.differentials__list__list-element__content-holder{
+    height: 13em;
+    margin-bottom: 1rem;
 }
 .differentials__list__list-element__title{
     color: var(--second-color);
@@ -37,11 +43,13 @@
 .triangle--card{
     content: ' ';
     position: absolute;
-    min-height: 15rem;
+
+    min-height: 15em;
     transform-origin: left;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg) no-repeat;
     background-position: center;
     background-size: contain;
-    width: 15rem;
+    top: 55%;
+    width: 15em;
     z-index: 1;
 }
