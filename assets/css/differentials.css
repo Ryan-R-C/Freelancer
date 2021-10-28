@@ -35,12 +35,13 @@
     font-size: 8em;
 }
 .triangle--card{
-    background-position: center;
-    opacity: .9;
-    min-height: 13em;
-    width: 16em;
+    content: ' ';
     position: absolute;
-    transform: translate(-50%, -40%);
-    z-index: 999;
-    object-fit: cover !important;
+    min-height: 15rem;
+    transform-origin: left;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg) no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 15rem;
+    z-index: 1;
 }
