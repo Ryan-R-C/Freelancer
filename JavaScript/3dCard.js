@@ -20,7 +20,7 @@ cardElement.forEach(element => {
                 triangle.style.transform  = "translate(-50%, -40%) translateZ(100px)"
             })
             icons.forEach(icon => {
-                icon.style.transform = "translateZ(2000px) rotate(360deg)"
+                icon.style.transform = "translateZ(200px) rotate(360deg)"
                 
             })
             titles.forEach(title => {
