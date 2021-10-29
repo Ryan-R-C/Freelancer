@@ -20,12 +20,11 @@ cardElement.forEach(element => {
                 triangle.style.transform  = "translate(-50%, -40%) translateZ(100px)"
             })
             icons.forEach(icon => {
-                icon.style.transform = "translateZ(150px) rotate(360deg)"
-                console.log(icon)
+                icon.style.transform = "translateZ(2000px) rotate(360deg)"
                 
             })
             titles.forEach(title => {
-                title.style.transform = "translateZ(200px)";})
+                title.style.transform = "translateZ(250px)";})
 
             card.addEventListener('mouseleave', (e) => {
                 card.style.transition = 'all 0.5s ease'
