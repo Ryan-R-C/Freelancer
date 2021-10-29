@@ -69,7 +69,7 @@ carouselSlide.addEventListener('transitionend', ()=> {
 
 window.addEventListener('resize', () => {
     carouselSlide.style.transition = "none";
-    size = carouselImages[0].offsetWidth + 18;
+    size = carouselImages[0].offsetWidth;
     carouselSlide.style.transform = 'translateX(' + -size * counter  + 'px)';
     console.log(counter);
     console.log(-size * counter);
