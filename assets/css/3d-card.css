@@ -15,9 +15,13 @@
     transform-style: preserve-3d;
     margin: 0 auto;
 }
-.card__element__icon{
-    transform: translate(0%);
+.card__element__title{
+    z-index: 3;
 }
+.card__element__icon{
+    z-index: 2;
+}
+
 .triangle--card,
 .card__element__icon,
 .card__element__title{
