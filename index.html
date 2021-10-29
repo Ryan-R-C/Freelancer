@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/3d-card.css">
     <link rel="stylesheet" href="assets/css/differentials.css">
     <link rel="stylesheet" href="assets/css/box.css">
+    <link rel="stylesheet" href="assets/css/picture.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/footer-logo.css">
@@ -261,10 +262,8 @@
                             <div class="triangle triangle--card"></div>
                             <h3 class="differentials__list__list-element__title
                             card__element__title">Incredible Designs</h3>
-                            <div class="card__element__icon">
-                                <span class="far fa-lightbulb
-                                differentials__list__list-element__icon"></span>
-                            </div>
+                            <span class="far fa-lightbulb
+                            differentials__list__list-element__icon"></span>
                         </div>
                     </li>
                     <li class="differentials__list__list-element
@@ -276,8 +275,7 @@
                         card__element__title">High Fidelity Interfaces</h3>
                             <div class="card__element__icon">
                                 <span class="fas fa-laptop-code
-                                differentials__list__list-element__icon
-                                card__element__icon"></span>
+                                differentials__list__list-element__icon"></span>
                             </div>
                         </div>
                     </li>
@@ -314,7 +312,7 @@
                     <aside class="flex-container portfolio__aside">
                         <article class="portfolio__article portfolio__article--aside">
                             <img class="portfolio__article__img portfolio__article__img--aside" src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/240999064_652997155675185_2949191112309355963_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=wtPok7RpV04AX-fHKqM&_nc_ht=scontent.fvcp4-1.fna&oh=449d76b2e83f3376fffdb3363f24e984&oe=61825062" alt="">
-                            <div class="content-holder flex-container--column">
+                            <div class="content-holder--aside flex-container--column">
                                 <h3 class="portfolio__article__h3">
                                     Product Page
                                 </h3>
@@ -324,8 +322,11 @@
                             </div>
                         </article>
                         <article class="portfolio__article portfolio__article--aside">
-                            <img class="portfolio__article__img portfolio__article__img--aside" src="https://i.ibb.co/zXqfPJM/AAA.png" alt="">
-                            <div class="content-holder flex-container--column">
+                            <picture class="portfolio__article__img portfolio__article__img--aside">
+                                <source media="(min-width:780px)" srcset="https://i.ibb.co/qWwJHZD/Whats-App-Image-2021-09-16-at-6-57-34-PM.jpg" class="picture__img">
+                                <img src="https://i.ibb.co/zXqfPJM/AAA.png" alt="" class="picture__img">
+                            </picture>
+                            <div class="content-holder--aside flex-container--column">
                                 <h3 class="portfolio__article__h3">Bootstrap Project</h3>
                                 <p class="portfolio__article__paragraph">
                                     Project using Bootstrap, a library of CSS3 and JavaScript, it is powerfull and maximize the time of styling the page.
