@@ -54,9 +54,10 @@
     height: .25rem;
     margin: .25rem;
     width: 1.5rem;
+    transition: all .7s ease-out;    
 }
 .burger .burger__line3{
-    transition: 0.2s ease-in-out;
+
     width: .75rem;
 }
 .burger:hover .burger__line3{
@@ -67,3 +68,13 @@
     transform: translateX(0);
 }
 
+.toggle .burger__line1{
+    transform: rotate(-45deg) translate(-10.5px, 2px);
+}
+.toggle .burger__line2{
+    opacity: 0;
+}
+.toggle .burger__line3{
+    transform: rotate(45deg) translate(-10.5px, -2px);
+    width: 1.5rem;
+}

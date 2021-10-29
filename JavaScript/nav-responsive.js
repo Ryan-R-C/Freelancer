@@ -16,6 +16,7 @@
                     link.style.animation = `nav-link--fade  0.5s ease fowards ${index/ 7 + 1.5}s`
                 }
                 })
+                burger.classList.toggle('toggle')
     })
     }
     navSlide();}) ()
