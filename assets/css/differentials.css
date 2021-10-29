@@ -7,7 +7,9 @@
 }
 .differentials__list{
     height: auto;
+    align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: 5rem;
     width: 100%;
@@ -17,16 +19,17 @@
     height: 2rem;
 }
 .differentials__list__list-element{
+    text-align: center;
     background-color: var(--deafault-white) !important;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     position: relative;
     margin-bottom: 0 !important;
     margin: 1rem;
     height: 100% !important;
-    width: calc(23% - 2rem);
-    text-align: center;
+    width: calc(100% - 2rem);
 }
 .differentials__list__list-element__content-holder{
     height: 13em;
@@ -52,4 +55,22 @@
     top: 55%;
     width: 15em;
     z-index: 1;
+}
+@media screen and (min-width:425px){
+    
+}
+@media screen and (min-width:768px){
+    .differentials__list__list-element{
+        width: calc(47% - 2rem);
+    }
+    .differentials__list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (min-width:1024px){
+    .differentials__list__list-element{
+        width: calc(24% - 2rem);
+    }
 }
