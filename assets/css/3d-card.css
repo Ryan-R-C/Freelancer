@@ -1,5 +1,5 @@
 
-.card__element{
+.card *{
     perspective: 1000px;
 }
 .card{

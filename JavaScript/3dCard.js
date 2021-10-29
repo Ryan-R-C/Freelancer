@@ -14,19 +14,20 @@ cardElement.forEach(element => {
         let yAxis = (window.innerHeight / 2 - e.pageY) / 35;
         card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
 
-        element.addEventListener('mouseenter', (e) => {
+        card.addEventListener('mouseenter', (e) => {
             card.style.transition = 'none'
             triangles.forEach(triangle => {
-                triangle.style.transform  = "translate(-50%, -40%) translateZ(300px)"
+                triangle.style.transform  = "translate(-50%, -40%) translateZ(100px)"
             })
             icons.forEach(icon => {
-                icon.style.transform      = "translateZ(150px) rotate(360deg)"
+                icon.style.transform = "translateZ(150px) rotate(360deg)"
+                console.log(icon)
                 
             })
             titles.forEach(title => {
-                title.style.transform = "translateZ(50px)";})
+                title.style.transform = "translateZ(200px)";})
 
-            element.addEventListener('mouseleave', (e) => {
+            card.addEventListener('mouseleave', (e) => {
                 card.style.transition = 'all 0.5s ease'
                 card.style.transform = `rotateY(0deg) rotateX(0deg)`
                 triangles.forEach(triangle => {
