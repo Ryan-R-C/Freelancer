@@ -1,0 +1,25 @@
+.what-i-do{
+}
+.what-i-do__article{
+    position: relative;
+}
+.what-i-do__article__title__title{
+
+}
+.what-i-do__article__title__content{
+
+}
+.what-i-do__article--webpages{
+
+}
+.what-i-do__article--apps::after{
+    background-color: aqua;
+    content: "";
+    top: -50%;
+    left: -50%;
+    position: absolute;
+    background: url("https://brmotorolanew.vtexassets.com/arquivos/ids/157353/Smartphone-Moto-G30-128-GB-foto-02.png?v=637522314444400000") 0 0 repeat;
+    height: 50%;
+    width: 50%;
+    z-index: 2;
+}
