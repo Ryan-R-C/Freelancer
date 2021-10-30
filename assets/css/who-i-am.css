@@ -1,0 +1,12 @@
+.who-i-am{
+    background-color: var(--default-black);
+    min-height: 80vw;
+    padding: 2rem 0;
+    margin-top: 0 auto;
+}
+.who-i-am__article{
+    background-color: var(--deafault-white);
+}
+.who-i-am__article__title{
+    color: var(--default-dark-grey);
+}
