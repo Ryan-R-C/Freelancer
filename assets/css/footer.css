@@ -6,9 +6,11 @@
     width: 100%;
 }
 
-.footer-section *{
+.footer-section__section--1 *,
+.footer-section__section--2 * {
     color: var(--deafault-white);
 }
+
 .footer-section__section--1{
     background-color: var(--default-dark-grey);
 }
