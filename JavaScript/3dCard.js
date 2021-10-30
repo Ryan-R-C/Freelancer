@@ -1,4 +1,4 @@
-const card = document.querySelector('.card-father__holder')
+( () => {const card = document.querySelector('.card-father__holder')
 const cardElement = document.querySelectorAll('.card')
 
 
@@ -40,4 +40,5 @@ cardElement.forEach(element => {
                     title.style.transform = "translateZ(0px)";})      
     })    
 });
-})})
+})})}
+)()
