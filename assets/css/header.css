@@ -42,9 +42,13 @@
     transition: transform 0.5s ease-in-out;
     width: 100%;
 }
+.header-fixed__navbar-brand__link{
+    margin-left: 5%;
+}
 
 .burger{
     cursor: pointer;
+    margin-right: 5%;
 
 }
 .burger .burger__line1,
