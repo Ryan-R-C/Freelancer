@@ -9,8 +9,17 @@
 .what-i-do__article__title__content{
 
 }
-.what-i-do__article--webpages{
-
+.what-i-do__article{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.what-i-do__article--apps{
+    flex-direction: row-reverse;
+}
+.what-i-do__article__main
+,.what-i-do__article__aside{
+    width: 45%;
 }
 .what-i-do__article--apps::after{
     background-color: aqua;
