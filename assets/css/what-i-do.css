@@ -13,21 +13,11 @@
 .what-i-do__article{
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     height: 50%
 }
-.what-i-do__article--apps{
-    flex-direction: row-reverse;
-}
-.what-i-do__article__main
-,.what-i-do__article__aside{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    width: 45%;
-}
+
 .what-i-do__article__aside{
     height: 100%;
 }
@@ -38,4 +28,26 @@
     transform: rotate(90deg);
     width:  100%;
     z-index: 2;
+}
+@media screen and (min-width: 767px) {
+    .what-i-do__article{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .what-i-do__article--apps{
+        flex-direction: row-reverse;
+    }
+    
+    .what-i-do__article__main
+    ,.what-i-do__article__aside{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        width: 45%;
+        }
+   
 }
