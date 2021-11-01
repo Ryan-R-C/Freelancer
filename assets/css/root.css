@@ -33,6 +33,9 @@ html{
     font-size: var(--small-font-size);
     overflow-x: hidden;
 }
+body{
+    overflow-x: hidden;
+}
 span{
     text-shadow: 2px 3px #000000 ;
 }
