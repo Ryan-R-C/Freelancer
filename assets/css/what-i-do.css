@@ -1,5 +1,5 @@
 .what-i-do{
-    height: 80vh;
+    min-height: 80vh;
 }
 .what-i-do__article{
     position: relative;
@@ -10,13 +10,6 @@
 .what-i-do__article__title__content{
 
 }
-.what-i-do__article{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 50%
-}
 
 .what-i-do__article__aside{
     height: 100%;
@@ -25,7 +18,6 @@
     object-fit: contain;
     content: "";
     height: 100%;
-    transform: rotate(90deg);
     width:  100%;
     z-index: 2;
 }
@@ -35,7 +27,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        height: 50%
     }
+    
     .what-i-do__article--apps{
         flex-direction: row-reverse;
     }
@@ -48,6 +42,10 @@
         justify-content: center;
         overflow: hidden;
         width: 45%;
-        }
+    }
+    .what-i-do__article__aside__img--app{
+        transform: rotate(90deg);
+    }
+    
    
 }
