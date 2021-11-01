@@ -27,6 +27,7 @@
     transition: font-size 1s;
     z-index: 1;
 }
+.triangle,
 .title-holder:before{
     content: "";
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
