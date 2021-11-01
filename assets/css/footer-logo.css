@@ -21,12 +21,9 @@
     white-space: nowrap;
     font-weight: bolder;
 }
-.triangle--footer {
-    
-    background-color: burlywood;
+.footer__section--3::before {
     content: ' ';
     position: absolute;
-
     min-height: 100%;
     transform-origin: left;
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
@@ -42,7 +39,7 @@
     
     left: 50%;
     position: absolute;
-    
+    top: 55%;
     transform-origin: left;
     transform: translate(-25%, 0) rotate(-15deg);
     transition: font-size 1s;
