@@ -21,8 +21,12 @@
 }
 .what-i-do__article__main
 ,.what-i-do__article__aside{
-    width: 45%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
+    width: 45%;
 }
 .what-i-do__article__aside{
     height: 100%;
@@ -31,7 +35,7 @@
     object-fit: contain;
     content: "";
     height: 100%;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
     width:  100%;
     z-index: 2;
 }
