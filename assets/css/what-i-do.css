@@ -1,4 +1,5 @@
 .what-i-do{
+    height: 80vh;
 }
 .what-i-do__article{
     position: relative;
@@ -13,6 +14,7 @@
     align-items: center;
     display: flex;
     justify-content: space-evenly;
+    height: 50%
 }
 .what-i-do__article--apps{
     flex-direction: row-reverse;
@@ -20,15 +22,16 @@
 .what-i-do__article__main
 ,.what-i-do__article__aside{
     width: 45%;
+    overflow: hidden;
 }
-.what-i-do__article--apps::after{
-    background-color: aqua;
+.what-i-do__article__aside{
+    height: 100%;
+}
+.what-i-do__article__aside__img--app{
+    object-fit: contain;
     content: "";
-    top: -50%;
-    left: -50%;
-    position: absolute;
-    background: url("https://brmotorolanew.vtexassets.com/arquivos/ids/157353/Smartphone-Moto-G30-128-GB-foto-02.png?v=637522314444400000") 0 0 repeat;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    transform: rotate(45deg);
+    width:  100%;
     z-index: 2;
 }
