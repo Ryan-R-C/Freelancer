@@ -18,7 +18,7 @@
     color: var(--deafault-white);
 }
 .header-section__title-holder__title{
-    font-size: 2.5em;
+    font-size: 2em;
     left: 50%;
     margin: 0;
     position: absolute;
@@ -32,19 +32,20 @@
     content: "";
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg') no-repeat;
     background-position: center;
+    background-size: contain;
     left: 50%;
     min-height: 23em;
     position: absolute;
     top: 50%;
     transform-origin: left;
     transform: translate(-50%, -50%);    
-    width: 26em;
+    width: 80%;
     z-index: 1;
 }
 
 
 .header-section__title-holder__subtitle{
-    font-size: 2.6em;
+    font-size: 1.8em;
     left: 50%;
     position: absolute;
     top: 55%;
@@ -83,4 +84,19 @@
     .header-section__title-holder__title{
         font-size: 3.5em;
     }
+    .triangle,
+    .title-holder:before{
+        width: 26em;
+    }
+    .header-section__title-holder__title{
+        font-size: 2.5em;
+       transform: translate(-50%, -50%);
+
+    }
+    
+    .header-section__title-holder__subtitle{
+        font-size: 2.6em;
+    }
+    
+
 }
