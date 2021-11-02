@@ -23,7 +23,7 @@
     margin: 0;
     position: absolute;
     top: 35%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -170%);
     transition: font-size 1s;
     z-index: 1;
 }
@@ -38,8 +38,8 @@
     position: absolute;
     top: 50%;
     transform-origin: left;
-    transform: translate(-50%, -50%);    
-    width: 80%;
+    transform: translate(-50%, -65%);    
+    width: 100%;
     z-index: 1;
 }
 
@@ -50,7 +50,7 @@
     position: absolute;
     top: 55%;
     transform-origin: left;
-    transform: translate(-45%, 0) rotate(-15deg);
+    transform: translate(-45%, -125%) rotate(-15deg);
     transition: font-size 1s;
     z-index: 2;
 }
@@ -88,14 +88,17 @@
     .title-holder:before{
         width: 26em;
     }
+    .title-holder:before,
     .header-section__title-holder__title{
         font-size: 2.5em;
-       transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
 
     }
     
     .header-section__title-holder__subtitle{
         font-size: 2.6em;
+        transform: translate(-45%, 0) rotate(-15deg);
+
     }
     
 
