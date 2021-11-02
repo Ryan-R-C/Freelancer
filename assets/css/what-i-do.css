@@ -48,7 +48,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        overflow: hidden;
         width: 43%;
     }
     .what-i-do__article__aside__img--app{

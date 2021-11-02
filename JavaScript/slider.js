@@ -16,11 +16,12 @@ function prevButtonAction(){
     carouselSlide.style.transition = "transform 0.5s ease-in-out"
     counter --
     carouselSlide.style.transform = `translateX(${(-size - 27) * counter}px`
+    console.log(counter);
     console.log((-size - 27) * counter - counter  * counter);
 }
 
 function nextButtonAction(){
-    if(counter <= carouselImages.length / 2 - 1 )
+    if(counter <= carouselImages.length / 2 + 2 )
     {
     carouselSlide.style.transition = 'transform 0.5s ease-in-out'
     counter ++
@@ -29,6 +30,8 @@ function nextButtonAction(){
     }
     else{
         counter = 1
+        carouselSlide.style.transition = "none";
+
     }
 }
 
@@ -51,18 +54,20 @@ carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
         carouselSlide.style.transition = "none"
         counter = Math.ceil(carouselImages.length / 2 + 1)
-        carouselSlide.style.transform = `translateX(${-size * counter - counter - 56}px`
+        carouselSlide.style.transform = `translateX(${-size * counter + counter * counter * counter }px`
         console.log("last");
         console.log(counter);
-        console.log(-size * counter * counter - 56);
+        console.log(-size * counter - counter * counter * counter);
+
     }
     if(carouselImages[counter].className.includes('first-clone')){
         carouselSlide.style.transition = "none"
-        counter = 2
+        counter = 1
         console.log("firts");
-        carouselSlide.style.transform = `translateX(${-size * counter - counter - 56}px`
+        carouselSlide.style.transform = `translateX(${-size * counter - counter * counter + counter}px`
+
         console.log(counter);
-        console.log(-size * counter - counter - 56);
+        console.log(-size * counter - counter - 27 * 2 - 2);
 
     }
 })
