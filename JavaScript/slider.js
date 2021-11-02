@@ -54,7 +54,7 @@ carouselSlide.addEventListener('transitionend', ()=> {
         carouselSlide.style.transform = `translateX(${-size * counter - counter - 56}px`
         console.log("last");
         console.log(counter);
-        console.log(-size * counter - counter - 56);
+        console.log(-size * counter * counter - 56);
     }
     if(carouselImages[counter].className.includes('first-clone')){
         carouselSlide.style.transition = "none"
