@@ -53,8 +53,8 @@ nextBtn.addEventListener('click', () =>{
 carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
         carouselSlide.style.transition = "none"
-        counter = Math.ceil(carouselImages.length / 2 + 1)
-        carouselSlide.style.transform = `translateX(${-size * counter + counter * counter * counter }px`
+        counter = Math.ceil(carouselImages.length / 2 - 1)
+        carouselSlide.style.transform = `translateX(${-size * counter - counter * counter * counter}px`
         console.log("last");
         console.log(counter);
         console.log(-size * counter - counter * counter * counter);
