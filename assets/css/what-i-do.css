@@ -1,5 +1,7 @@
 .what-i-do{
-    min-height: 80vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .what-i-do__article{
     position: relative;
