@@ -1,6 +1,10 @@
 .portfolio{
     background-color: var(--deafault-white );    
     padding: 2rem 0;
+    min-height: calc(100vh - 5rem);
+}
+.portfolio__title{
+    margin-bottom: 5rem;
 }
 .portfolio__article{
     display: flex;

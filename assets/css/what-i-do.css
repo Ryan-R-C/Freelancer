@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0 2rem 0 ;
+    padding-top: 5rem ;
 }
 .what-i-do__title{
     margin-bottom: 5rem;
@@ -12,7 +12,6 @@
 .what-i-do__article{
     position: relative;
     width: 90%;
-    margin: 1rem auto;
 }
 .what-i-do__article__title{
     border-bottom: 1px solid var(--custom-grey);
@@ -72,7 +71,4 @@
 
     }
 
-}    
-@media screen and (min-width:1024px){
-    
 }
