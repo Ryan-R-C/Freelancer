@@ -1,7 +1,6 @@
 .who-i-am{
-    background: linear-gradient(to bottom , var(--default-black), var(--main-color));
-    min-height: 80vw;
-    margin-top: 0 auto;
+    background: linear-gradient(to bottom , black, var(--main-color));
+    min-height: 100vh;
 }
 .who-i-am__article{
     background-color: var(--deafault-white);

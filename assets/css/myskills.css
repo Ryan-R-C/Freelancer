@@ -1,8 +1,8 @@
 .my-skills{
     align-items: center;    
-    background-color: var(--default-dark-grey);
+    background-color: var(--default-light-grey);
     display: flex;
-    min-height: 60vh;
+    min-height: 100vh;
     justify-content: center;
     flex-direction: column;
 }
