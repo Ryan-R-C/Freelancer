@@ -1,7 +1,9 @@
 .my-skills{
+    align-items: center;    
     background-color: var(--default-dark-grey);
-    padding-bottom: 3rem;
     display: flex;
+    min-height: 60vh;
+    justify-content: center;
     flex-direction: column;
 }
 .my-skills__list{
