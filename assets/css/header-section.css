@@ -58,6 +58,8 @@
 .header-section__about__content__subtitle3{
     color: var(--deafault-white);
     text-align: center;
+    font-size: 1rem;
+
 }
 .header-section__about__content{
     margin-bottom: 1rem;
