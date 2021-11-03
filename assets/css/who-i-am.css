@@ -7,4 +7,5 @@
 }
 .who-i-am__article__title{
     color: var(--default-dark-grey);
+    margin-bottom: 2.5rem;
 }
