@@ -1,5 +1,5 @@
 .who-i-am{
-    background: linear-gradient(to bottom , black, var(--main-color));
+    background: linear-gradient(to bottom , #161315, var(--main-color));
     min-height: 100vh;
 }
 .who-i-am__article{
