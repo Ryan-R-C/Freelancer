@@ -32,6 +32,7 @@ html{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
     font-size: var(--small-font-size);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
