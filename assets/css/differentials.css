@@ -1,7 +1,10 @@
 .differentials{
     background-color: var(--default-dark-grey);
     padding-bottom: 3rem;
-    min-height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
     width: 100%;
 }
 .differentials__list{
@@ -11,11 +14,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5rem;
-    width: calc(100%-2rem);
+    width: 100%;
 }
 .differentials__title{
     color: var(--deafault-white);
-    height: 2rem;
 }
 .differentials__list__list-element{
     text-align: center;
