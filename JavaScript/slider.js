@@ -9,7 +9,6 @@ const nextBtn = document.querySelector('#nextBtn')
 counter = 1
 
 let size = carouselImages[0].offsetWidth;
-console.log("size ",carouselImages[0].offsetWidth)
 
 function adaptCarousel(){
     carouselSlide.style.transform = `translateX(${(-size - 18) * counter - 56}px)`
@@ -21,8 +20,6 @@ function prevButtonAction(){
     carouselSlide.style.transition = "transform 0.5s ease-in-out"
     counter --
     carouselSlide.style.transform = `translateX(${(-size - 27) * counter}px`
-    console.log(counter);
-    console.log((-size - 27) * counter - counter  * counter);
 }
 
 function nextButtonAction(){
@@ -31,10 +28,9 @@ function nextButtonAction(){
     carouselSlide.style.transition = 'transform 0.5s ease-in-out'
     counter ++
     carouselSlide.style.transform = `translateX(${(-size - 27) * counter - counter  * counter}px`
-    console.log((-size - 27) * counter - counter  * counter);
     }
     else{
-        counter = 1
+        counter = 2
         carouselSlide.style.transition = "none";
 
     }
@@ -47,19 +43,15 @@ function resetCarousel(){
 
 adaptCarousel()
 
+
 /*=============================
     Button Event Listeners
 =============================*/
 prevBtn.addEventListener('click', () =>{
     prevButtonAction()
-    console.log("prev");
-    console.log(counter);
 })
 nextBtn.addEventListener('click', () =>{
     nextButtonAction()
-    console.log("next");
-    console.log(counter);
-
 })
 
 /*==============================
