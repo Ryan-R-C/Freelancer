@@ -10,6 +10,10 @@ counter = 1
 let size = carouselImages[0].offsetWidth;
 console.log("size ",carouselImages[0].offsetWidth)
 
+function adaptCarousel(){
+    carouselSlide.style.transform = `translateX(${(-size - 18) * counter - 56}px)`
+}
+
 
 function prevButtonAction(){
     if(counter <= 0 ) return
@@ -34,14 +38,14 @@ function nextButtonAction(){
 
     }
 }
-function resetCarrousel(){
+function resetCarousel(){
     carouselSlide.style.transform = `translateX(${-size * counter - counter * counter + counter}px`
     console.log(counter);
-
+    
 }
 
-carouselSlide.style.transform = `translateX(${(-size - 18) * counter - 56}px)`
-console.log((-size - 18) * counter)
+adaptCarousel()
+
 //btn listeners
 prevBtn.addEventListener('click', () =>{
     prevButtonAction()
@@ -59,22 +63,20 @@ carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
         carouselSlide.style.transition = "none"
         counter = Math.ceil(carouselImages.length / 2 - 1)
-        resetCarrousel()
+        resetCarousel()
 
     }
     if(carouselImages[counter].className.includes('first-clone')){
         carouselSlide.style.transition = "none"
         counter = 2
-        resetCarrousel()
+        resetCarousel()
     }
 })
 
 window.addEventListener('resize', () => {
     carouselSlide.style.transition = "none";
     size = carouselImages[0].offsetWidth;
-    carouselSlide.style.transform = 'translateX(' + -size * counter  + 'px)'; 
-    console.log(counter);
-    console.log(-size * counter);
+    adaptCarousel()
 })
 
 }) ()
