@@ -7,6 +7,7 @@ const prevBtn = document.querySelector('#prevBtn')
 const nextBtn = document.querySelector('#nextBtn')
 
 counter = 1
+
 let size = carouselImages[0].offsetWidth;
 console.log("size ",carouselImages[0].offsetWidth)
 
@@ -46,7 +47,9 @@ function resetCarousel(){
 
 adaptCarousel()
 
-//btn listeners
+/*=============================
+    Button Event Listeners
+=============================*/
 prevBtn.addEventListener('click', () =>{
     prevButtonAction()
     console.log("prev");
@@ -58,6 +61,10 @@ nextBtn.addEventListener('click', () =>{
     console.log(counter);
 
 })
+
+/*==============================
+    Carousel Event Listeners
+===============================*/
 
 carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
@@ -72,6 +79,10 @@ carouselSlide.addEventListener('transitionend', ()=> {
         resetCarousel()
     }
 })
+
+/*===========================
+    Resize Event Listener
+============================*/
 
 window.addEventListener('resize', () => {
     carouselSlide.style.transition = "none";
