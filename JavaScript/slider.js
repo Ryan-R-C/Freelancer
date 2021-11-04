@@ -34,6 +34,11 @@ function nextButtonAction(){
 
     }
 }
+function resetCarrousel(){
+    carouselSlide.style.transform = `translateX(${-size * counter - counter * counter + counter}px`
+    console.log(counter);
+
+}
 
 carouselSlide.style.transform = `translateX(${(-size - 18) * counter - 56}px)`
 console.log((-size - 18) * counter)
@@ -54,28 +59,20 @@ carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
         carouselSlide.style.transition = "none"
         counter = Math.ceil(carouselImages.length / 2 - 1)
-        carouselSlide.style.transform = `translateX(${-size * counter - counter * counter * counter}px`
-        console.log("last");
-        console.log(counter);
-        console.log(-size * counter - counter * counter * counter);
+        resetCarrousel()
 
     }
     if(carouselImages[counter].className.includes('first-clone')){
         carouselSlide.style.transition = "none"
-        counter = 1
-        console.log("firts");
-        carouselSlide.style.transform = `translateX(${-size * counter - counter * counter + counter}px`
-
-        console.log(counter);
-        console.log(-size * counter - counter - 27 * 2 - 2);
-
+        counter = 2
+        resetCarrousel()
     }
 })
 
 window.addEventListener('resize', () => {
     carouselSlide.style.transition = "none";
     size = carouselImages[0].offsetWidth;
-    carouselSlide.style.transform = 'translateX(' + -size * counter  + 'px)';
+    carouselSlide.style.transform = 'translateX(' + -size * counter  + 'px)'; 
     console.log(counter);
     console.log(-size * counter);
 })
