@@ -1,5 +1,5 @@
 .my-skills{
-    align-items: center;    
+ 
     background-color: var(--default-light-grey);
     display: flex;
     min-height: 100vh;
@@ -8,7 +8,6 @@
 }
 .my-skills__list{
     padding: 0 !important;
-    height: auto;
 }
 .my-skills__title{
     color: var(--deafault-white);
