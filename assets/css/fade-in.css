@@ -1,0 +1,13 @@
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+.fade-in--left{
+    transform: translateX(-100%);
+}
+.fade-in--right{
+    transform: translateX(100%);
+}
+.fade-in.appear{
+    opacity: 1;
+}
