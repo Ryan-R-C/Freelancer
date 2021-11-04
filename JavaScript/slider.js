@@ -14,12 +14,15 @@ function adaptCarousel(){
     carouselSlide.style.transform = `translateX(${(-size - 18) * counter - 56}px)`
 }
 
+function slide(){
+    carouselSlide.style.transform = `translateX(${(-size - 27) * counter - counter  * counter}px`
+}
 
 function prevButtonAction(){
     if(counter <= 0 ) return
     carouselSlide.style.transition = "transform 0.5s ease-in-out"
     counter --
-    carouselSlide.style.transform = `translateX(${(-size - 27) * counter}px`
+    slide()
 }
 
 function nextButtonAction(){
@@ -27,7 +30,7 @@ function nextButtonAction(){
     {
     carouselSlide.style.transition = 'transform 0.5s ease-in-out'
     counter ++
-    carouselSlide.style.transform = `translateX(${(-size - 27) * counter - counter  * counter}px`
+    slide()
     }
     else{
         counter = 2
@@ -36,9 +39,7 @@ function nextButtonAction(){
     }
 }
 function resetCarousel(){
-    carouselSlide.style.transform = `translateX(${-size * counter - counter * counter + counter}px`
-    console.log(counter);
-    
+    carouselSlide.style.transform = `translateX(${-size * counter - counter * counter + counter}px`    
 }
 
 adaptCarousel()
