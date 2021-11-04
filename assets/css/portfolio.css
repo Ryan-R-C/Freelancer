@@ -2,6 +2,8 @@
     background-color: var(--deafault-white );    
     padding: 5rem 0;
     min-height: calc(100vh - 5rem);
+    margin-top: .5rem;
+    border-top: 2px solid var(--default-dark-grey);
 }
 .portfolio__title{
     margin-bottom: 5rem;
