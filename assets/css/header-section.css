@@ -98,6 +98,8 @@
     .header-section__title-holder__subtitle{
         font-size: 2.6em;
         transform: translate(-45%, 0) rotate(-15deg);
+        top: 55%;
+
 
     }
     
