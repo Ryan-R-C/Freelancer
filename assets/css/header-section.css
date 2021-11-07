@@ -34,12 +34,12 @@
     background-position: center;
     background-size: contain;
     left: 50%;
-    min-height: 23em;
+    min-height: 32em;
     position: absolute;
     top: 50%;
     transform-origin: left;
     transform: translate(-50%, -65%);    
-    width: 100%;
+    width: 83%;
     z-index: 1;
 }
 
