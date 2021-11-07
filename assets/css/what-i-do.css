@@ -11,6 +11,7 @@
 }
 .what-i-do__article{
     position: relative;
+    margin: 0 auto;
     width: 90%;
 }
 .what-i-do__article__title{
