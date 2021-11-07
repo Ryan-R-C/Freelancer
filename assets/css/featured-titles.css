@@ -10,6 +10,7 @@
 .featured-subtitle{
     color: var(--second-color-light) !important;
     font-family: 'Courgette', cursive !important;
+    white-space: nowrap;
 }
 .featured-title--glitch{
     color: var(--deafault-white);
