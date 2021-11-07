@@ -48,7 +48,7 @@
     font-size: 1.8em;
     left: 50%;
     position: absolute;
-    top: 55%;
+    top: 45%;
     transform-origin: left;
     transform: translate(-45%, -125%) rotate(-15deg);
     transition: font-size 1s;
