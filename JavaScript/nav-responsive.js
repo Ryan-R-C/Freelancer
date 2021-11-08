@@ -17,13 +17,15 @@
                 }
                 })
                 burger.classList.toggle('toggle')//Add the class list toggle to make a X animation
+                console.log("inside");
     })
     window.addEventListener('mouseup', (event) => {
-            if(event.target != nav && event.target.parentNode != nav){
+            if(event.target != nav && event.target.parentNode != nav && event.target.parentNode != burger && event.target != burger){
                 nav.classList.remove('menu--active')
                 burger.classList.remove('toggle')
-
+                console.log("outside");
             }
+            
     })
     }
     navSlide();}) ()
