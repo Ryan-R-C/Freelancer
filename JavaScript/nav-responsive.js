@@ -20,7 +20,9 @@
     })
     window.addEventListener('mouseup', (event) => {
             if(event.target != nav && event.target.parentNode != nav){
-                
+                nav.classList.remove('menu--active')
+                console.log("remove!!!!")
+
             }
     })
     }
