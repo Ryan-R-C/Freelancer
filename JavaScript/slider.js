@@ -34,7 +34,7 @@ function nextButtonAction(){
     }
     else{
         counter = 2
-        carouselSlide.style.transition = "none";
+        noneTransition()
 
     }
 }
@@ -56,18 +56,26 @@ nextBtn.addEventListener('click', () =>{
 })
 
 /*==============================
+    Return none transition
+===============================*/
+const noneTransition = () =>{
+    return carouselSlide.style.transition = "none";
+}
+
+
+/*==============================
     Carousel Event Listeners
 ===============================*/
 
 carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
-        carouselSlide.style.transition = "none"
+        noneTransition()
         counter = Math.ceil(carouselImages.length / 2 - 1)
         resetCarousel()
 
     }
     if(carouselImages[counter].className.includes('first-clone')){
-        carouselSlide.style.transition = "none"
+        noneTransition()
         counter = 2
         resetCarousel()
     }
@@ -78,7 +86,7 @@ carouselSlide.addEventListener('transitionend', ()=> {
 ============================*/
 
 window.addEventListener('resize', () => {
-    carouselSlide.style.transition = "none";
+    noneTransition()
     size = carouselImages[0].offsetWidth;
     adaptCarousel()
 })
