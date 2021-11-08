@@ -3,7 +3,19 @@
     const burger = document.querySelector(".burger")
     const nav = document.querySelector(".header-fixed__menu__list")//ul
     const liLinks = document.querySelectorAll(".header-fixed__menu__list__item")//li
-    
+
+    const undropMenu =  (event) => {
+        if(event.target != nav && event.target.parentNode != nav && event.target.parentNode != burger && event.target != burger){
+            nav.classList.remove('menu--active')
+            burger.classList.remove('toggle')
+            console.log(
+                "cu"
+            );
+        }
+        
+}
+        
+
         burger.addEventListener('click', () => {
             //Toggle Nav
             nav.classList.toggle('menu--active')//It was translated to top, when the burguer it toogled slide down
@@ -17,15 +29,7 @@
                 }
                 })
                 burger.classList.toggle('toggle')//Add the class list toggle to make a X animation
-                console.log("inside");
-    })
-    window.addEventListener('mouseup', (event) => {
-            if(event.target != nav && event.target.parentNode != nav && event.target.parentNode != burger && event.target != burger){
-                nav.classList.remove('menu--active')
-                burger.classList.remove('toggle')
-                console.log("outside");
-            }
-            
-    })
+                window.addEventListener('mouseup', undropMenu)
+            })
     }
     navSlide();}) ()
