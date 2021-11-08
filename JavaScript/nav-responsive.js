@@ -18,5 +18,10 @@
                 })
                 burger.classList.toggle('toggle')//Add the class list toggle to make a X animation
     })
+    window.addEventListener('mouseup', (event) => {
+            if(event.target != nav && event.target.parentNode != nav){
+                
+            }
+    })
     }
     navSlide();}) ()
