@@ -37,9 +37,9 @@
 .footer--subtitle{
     font-size: 1.6em;
     
-    left: 50%;
+    left: 40%;
     position: absolute;
-    top: 55%;
+    top: 60%;
     transform-origin: left;
     transform: translate(-25%, 0) rotate(-15deg);
     transition: font-size 1s;
