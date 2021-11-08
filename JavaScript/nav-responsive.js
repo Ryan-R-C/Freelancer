@@ -22,7 +22,6 @@
             if(event.target != nav && event.target.parentNode != nav){
                 nav.classList.remove('menu--active')
                 burger.classList.remove('toggle')
-                console.log("remove!!!!")
 
             }
     })
