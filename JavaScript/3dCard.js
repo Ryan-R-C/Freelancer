@@ -5,7 +5,7 @@ const CardElement = document.querySelector('.card-father__holder')
 const triangles = document.querySelectorAll('.triangle--card')
 const icons = document.querySelectorAll('.card__element__icon')
 const titles = document.querySelectorAll('.card__element__title')
-console.log(triangles, icons, titles)
+
 
 
 CardElement.addEventListener('mousemove', (e) => {
