@@ -1,14 +1,21 @@
 ( () =>
     {
+//CAROUSEL COMPONENTS::
 const carouselSlide = document.querySelector(".carousel-container__carousel-slide")
 const carouselImages = document.querySelectorAll(".carousel-slide__carousel-items")
-//btn
+
+//BUTTONS:
 const prevBtn = document.querySelector('#prevBtn')
 const nextBtn = document.querySelector('#nextBtn')
 
+//GLOBAL ESSENTIAL VARIABLES
 counter = 1
-
 let size = carouselImages[0].offsetWidth;
+
+
+/*=============================
+       Carousel Actions
+=============================*/
 
 function adaptCarousel(){
     carouselSlide.style.transform = `translateX(${(-size - 18) * counter - 56}px)`
@@ -20,7 +27,7 @@ function slide(){
 
 function prevButtonAction(){
     if(counter <= 0 ) return
-    carouselSlide.style.transition = "transform 0.5s ease-in-out"
+    deafaultransition()    
     counter --
     slide()
 }
@@ -28,7 +35,7 @@ function prevButtonAction(){
 function nextButtonAction(){
     if(counter <= carouselImages.length / 2 + 2 )
     {
-    carouselSlide.style.transition = 'transform 0.5s ease-in-out'
+    deafaultransition()
     counter ++
     slide()
     }
@@ -56,10 +63,13 @@ nextBtn.addEventListener('click', () =>{
 })
 
 /*==============================
-    Return none transition
+        Return transition
 ===============================*/
 const noneTransition = () =>{
     return carouselSlide.style.transition = "none";
+}
+const deafaultransition = () =>{
+    return carouselSlide.style.transition = 'transform 0.5s ease-in-out';
 }
 
 
