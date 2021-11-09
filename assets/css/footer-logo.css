@@ -41,7 +41,7 @@
     position: absolute;
     top: 60%;
     transform-origin: left;
-    transform: translate(-25%, 0) rotate(-15deg);
+    transform: translate(-30%, 0) rotate(-15deg);
     transition: font-size 1s;
     z-index: 2;
 
@@ -51,7 +51,7 @@
     .footer--subtitle{
         top: 60%;
 
-        transform: translate(-45%, 0) rotate(-15deg);
+        transform: translate(-20%, 20%) rotate(-15deg);
     }    
     .footer--title{
         font-size: 2em;
