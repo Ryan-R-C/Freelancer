@@ -1,6 +1,5 @@
 .differentials{
     background-color: var(--default-dark-grey);
-    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     padding: 5rem 0;
