@@ -52,7 +52,7 @@ function resetCarousel(){
 adaptCarousel()
 
 
-//setInterval(nextButtonAction, 5000)
+setInterval(nextButtonAction, 5000)
 
 
 /*=============================
@@ -83,7 +83,7 @@ const deafaultransition = () =>{
 carouselSlide.addEventListener('transitionend', ()=> {
     if(carouselImages[counter].className.includes('last-clone')){
         noneTransition()
-        counter = Math.ceil(carouselImages.length / 2 - 1)
+        counter = Math.floor(carouselImages.length / 2  - 1)
         resetCarousel()
 
     }
