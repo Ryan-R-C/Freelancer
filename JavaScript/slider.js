@@ -52,7 +52,7 @@ function resetCarousel(){
 adaptCarousel()
 
 
-setInterval(nextButtonAction, 5000)
+//setInterval(nextButtonAction, 5000)
 
 
 /*=============================
@@ -89,7 +89,7 @@ carouselSlide.addEventListener('transitionend', ()=> {
     }
     if(carouselImages[counter].className.includes('first-clone')){
         noneTransition()
-        counter = 2
+        counter = 1
         resetCarousel()
     }
 })
