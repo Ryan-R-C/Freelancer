@@ -52,6 +52,9 @@ function resetCarousel(){
 adaptCarousel()
 
 
+setInterval(nextButtonAction, 5000)
+
+
 /*=============================
     Button Event Listeners
 =============================*/
